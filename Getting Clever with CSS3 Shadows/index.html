@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Shadows</title>
+	<style>
+	body {
+		width: 500px;
+		margin: 50px auto;
+	}
+	
+	.box {
+		position: relative;
+		-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+		-moz-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+		box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+		
+		/* Kokakify */
+		padding: 10px;
+		background: white;
+		
+	}
+	
+	.box img {
+		max-width: 100%;
+		border: 1px inset #8a4419;
+		
+	}	
+	
+	.box:after {
+		content: '';
+		-webkit-box-shadow: 100px 0 10px 20px rgba(0,0,0,.2);
+		-moz-box-shadow: 100px 0 10px 20px rgba(0,0,0,.2);
+		box-shadow: 100px 0 10px 20px rgba(0,0,0,.2);
+		position: absolute;
+		width: 50%;
+		height: 40px;
+		bottom: 20px;
+		right: 90px;
+		z-index: -1;
+		-webkit-transform: skew(-40deg);
+		-moz-transform: skew(-40deg);
+		transform: skew(-40deg);
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="tuts.jpg" alt="Tuts" />
+	</div>
+</body>
+</html>
