@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	outline: none;
+}
+
+::selection {
+	background: transparent; 
+	}
+::-moz-selection {
+	background: transparent;
+}
+
+@font-face {
+	font-family: Icon;
+	src: 	url('icons/icon.woff'),
+			url('icons/icon.ttf'),
+			url('icons/icon.eot'),
+			url('icons/icon.svg');
+
+}
+
+.Center {
+	margin-left:100px;
+	margin-top:100px;
+}
+
+.Button {
+	width: 250px;
+	height: 48px;
+	float: left;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #EAA980;
+	border: solid 1px #C99674;
+	border-radius: 2px;
+	display: block;
+	cursor: pointer;
+} .Button:hover {
+	background-color: #EAA980;
+	border: solid 1px #AD7955;
+} .Button:active {
+	background-color: #C99674;
+	border: solid 1px #AD7955;
+}    .Button .Icon {
+        width: 36px;
+		height: 48px;
+		float: left;
+		line-height: 50px;
+		text-align: center;
+		font-family: Icon;
+		font-size: 16px;
+        font-weight: normal;
+		border-right: solid 1px #C99674;
+    }
+
+.Button.Facebook {
+	background-color: #7C9ACA;
+	border: solid 1px #5271B1;
+} .Button.Facebook:hover {
+	background-color: #5271B1;
+	border: solid 1px #3b5998;
+} .Button.Facebook:active {
+	background-color: #3b5998;
+	border: solid 1px #5271B1;
+}   .Button.Facebook .Icon {
+        font-size: 20px;
+        border-right: solid 1px #5271B1;
+    } .Button.Facebook:hover .Icon {
+        border-right: solid 1px #3b5998;
+    } .Button.Facebook:active .Icon {
+        border-right: solid 1px #5271B1;
+    }
